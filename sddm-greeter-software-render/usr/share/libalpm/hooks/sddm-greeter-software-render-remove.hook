@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Remove
+Target = sddm-greeter-software-render
+
+[Action]
+Description = Remove force sddm greeter use software render
+When = PreTransaction
+Exec = /usr/share/libalpm/scripts/sddm-greeter-software-render-remove

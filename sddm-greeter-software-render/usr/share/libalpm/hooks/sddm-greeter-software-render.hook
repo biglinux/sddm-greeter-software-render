@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = sddm
+Target = sddm-greeter-software-render
+
+[Action]
+Description = Force sddm greeter use software render
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/sddm-greeter-software-render

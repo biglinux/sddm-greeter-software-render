@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ "$(file -i /usr/bin/sddm-greeter | grep 'charset=binary')" != "" ]; then
+    mv -f /usr/bin/sddm-greeter /usr/bin/sddm-greeter.distrib
+    cp -f /usr/share/divert/sddm-greeter /usr/bin/sddm-greeter
+fi
